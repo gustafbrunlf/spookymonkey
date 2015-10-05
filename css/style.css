@@ -1,0 +1,221 @@
+@charset "UTF-8";a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body,html{height:100%;width:100%}body{-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;-ms-font-smoothing:antialiased;-o-font-smoothing:antialiased;-moz-osx-font-smoothing:greyscale;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;margin:0;padding:0;font:12px "Helvetica Neue",Helvetica,Arial,sans-serif}hr,ol,ul{border:0;height:1px;background:#ccc}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:' ';content:none}table{border-collapse:collapse;border-spacing:0}*{margin:0;padding:0;list-style:none;-webkit-box-sizing:border-box;-moz-webkit-box-sizing:border-box;-ms-webkit-box-sizing:border-box;-o-webkit-box-sizing:border-box;box-sizing:border-box}html{-webkit-tap-highlight-color:rgba(0,0,0,0)}a,button,input,select,textarea{-webkit-tap-highlight-color:transparent}a{text-decoration:none}
+
+	#container{
+		width: 100%;
+		height: 100%;
+		background: url('../img/house.jpg') no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		z-index: 10;
+		overflow: auto;
+		overflow-x: hidden;
+	}
+
+	header{
+		width: 100%;
+		margin: 0px;
+		height: 120px;
+		position: fixed;
+		background: #000;
+		border-bottom: 2px solid #663399;
+		z-index: 10;
+	}
+
+	#header{
+		margin-top: 40px;
+		margin-left: 330px;
+		font-size: 4em;
+		font-family: 'Poiret One', cursive;
+		color: #663399;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	.send{
+		width: 310px;
+		margin: 150px 0 0 280px; 
+		float: left;
+		padding: 30px 60px;
+	}
+
+	.post{
+		width: 310px;
+		margin: 170px 0px 0px 50px;
+		float: left;
+		padding: 10px 0px 0px 40px;
+	}
+
+	input{
+		width: 300px;
+		padding: 15px;
+		outline: none;
+		margin-bottom: 10px;
+		font-size: 12px;
+		opacity: 0.9;
+		border-bottom: 5px solid #663399;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		color: #663399;
+	}
+
+	textarea{
+		width: 300px;
+		height: 130px;
+		padding: 15px;
+		outline: none;
+		font-size: 12px;
+		margin-bottom: 7px;
+		opacity: 0.9;
+		border-bottom: 5px solid #663399;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		color: #663399;
+	}
+
+	button{
+		width: 300px;
+		letter-spacing: 5px;
+		text-align: center;
+		height: 40px;
+		font-size: 15px;
+		opacity: 0.9;
+		color: #fff;
+		outline: none;
+		border: 5px solid #663399;
+		background: #000;
+		cursor: pointer;
+
+		-webkit-transition: background 0.1s ease, color 0.3 ease;
+		-moz-transition: background 0.1s ease, color 0.3s ease;
+		-ms-transition: background 0.1s ease, color 0.3s ease;
+		-o-transition: background 0.1s ease, color 0.3s ease;
+		transition: background 0.15s ease, color 0.15s ease;
+	}
+
+	button:active{
+		background: #663399;
+		color: #fff;
+	}
+
+	::-webkit-input-placeholder {
+	   color: #663399;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: #663399;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: #663399;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: #663399;  
+	}
+
+	.result{
+		padding: 20px 0px 20px 0px;
+		color: #663399;
+		font-size: 13px;
+		border-bottom: 2px solid #663399;
+		width: 260px;
+		clear: both;
+	}
+
+	.wrapperPost{
+		opacity: 0.9;
+		padding: 5px 5px 40px 20px;
+		background: #fff;
+		width: 310px;
+		margin-bottom: 20px;
+	}
+
+	.name{
+		float: left;
+		padding-bottom: 10px;
+		font-weight: bold;
+	}
+	
+	.email{
+		float: left;
+	}
+
+	.message{
+		padding: 5px 0px 10px 0px;
+		float: left;
+		clear: both;
+	}
+
+	.icon{
+		margin-left: 5px;
+		color: #663399;
+	}
+
+	.error{
+		color: red;
+		padding: 10px;
+		width: 300px;
+		font-size: 15px;
+		background: #000;
+		opacity: 0.9;
+		margin-top: 5px;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 1100px) {
+    #header{
+    	margin-top: 10px;
+		margin-left: 300px;
+		font-size: 2em;
+		padding: 5px;
+    }
+
+    header{
+    	width: 100%;
+    	height: 60px;
+		margin: 0px;
+		border-bottom: 1px solid #663399;
+    }
+
+    input{
+    	font-size: 10px;
+    	padding: 8px;
+    	width: 200px;
+    }
+
+    textarea{
+    	height: 80px;
+    	font-size: 10px;
+    	padding: 8px;
+    	width: 200px;
+    }
+
+    button{
+    	font-size: 10px;
+    	width: 200px;
+    }
+
+    .send {
+    	margin: 70px 0px 0px 150px;
+    }
+
+    .post{
+    	margin: 90px 0px 0px 0px;
+    	padding-left: 0px;
+    }
+
+    .result{
+    	font-size: 10px;
+    }
+}
+
+
+
+
+
+
